@@ -2,6 +2,7 @@
 CSCI 3308 Final Project
 
 MILESTONE 1
+
 Team Name: College Crusaders
 Members: Joey Pucciarelli, Jim Jenkins, Taylor Jesse, Toshal Ghimire, Dale Peffer, 
 
