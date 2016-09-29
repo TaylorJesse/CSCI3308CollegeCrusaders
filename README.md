@@ -8,9 +8,9 @@ Team Name: College Crusaders
 Members: Joey Pucciarelli, Jim Jenkins, Taylor Jesse, Toshal Ghimire, Dale Peffer, 
 
 Description: 
-	The general idea of our application is to help college students really understand how their college degree will affect their future in either a good or bad way. Two major components of planning ahead include knowing one’s job competition in his/her field and managing paying off student debt. Many students ask, “I am making the right investment in higher education?” The goal of our app is to lead students to that answer.
+The general idea of our application is to help college students really understand how their college degree will affect their future in either a good or bad way. Two major components of planning ahead include knowing one’s job competition in his/her field and managing paying off student debt. Many students ask, “I am making the right investment in higher education?” The goal of our app is to lead students to that answer.
 	
-	This app will analyze a college major of the user’s choice. It will show the demand jobs have for people in that major and the amount of other college students competing for that job. From this, it will calculate a competitive rate for that major giving the user more insight on the likeliness of obtaining a job after completing school. The app will also give the cost of obtaining the specified major, the average salary for someone in that field, and how long it would take to pay off of any debt from schooling with this salary.
+This app will analyze a college major of the user’s choice. It will show the demand jobs have for people in that major and the amount of other college students competing for that job. From this, it will calculate a competitive rate for that major giving the user more insight on the likeliness of obtaining a job after completing school. The app will also give the cost of obtaining the specified major, the average salary for someone in that field, and how long it would take to pay off of any debt from schooling with this salary.
 
 
 Vision Statement: Our goal is to enhance student awareness and help guide individuals toward careers in which there is a great demand within the community.
@@ -18,7 +18,7 @@ Vision Statement: Our goal is to enhance student awareness and help guide indivi
 
 Motivation:
 
-	Most college students cringe in fear when thinking of their future and getting a job after graduation. Nowadays, getting a college education does not necessarily mean a stable career and financial success. Many students are unfortunately saddled with years and years of college debt. Our motivation is to provide college kids perspective of their degree program and a glimpse into what they will have to deal with in the future. Knowledge and foresight about job competition in local areas and debt calculations will give students an opportunity to prepare and plan for a more realistic life- and ultimately help aid them in becoming more successful.
+Most college students cringe in fear when thinking of their future and getting a job after graduation. Nowadays, getting a college education does not necessarily mean a stable career and financial success. Many students are unfortunately saddled with years and years of college debt. Our motivation is to provide college kids perspective of their degree program and a glimpse into what they will have to deal with in the future. Knowledge and foresight about job competition in local areas and debt calculations will give students an opportunity to prepare and plan for a more realistic life- and ultimately help aid them in becoming more successful.
 
 Risks: 
 
@@ -43,9 +43,10 @@ Repository URL: https://github.com/TaylorJesse/CSCI3308CollegeCrusaders/tree/mas
 Group Usernames: TaylorJesse, ToshalGhimire, JoeyPucciarelli, jim-a-jenkins, dalepeffer
 
 Software Development Methodology: 
-	We plan to follow the Agile methodology for the duration of the project. The Agile model consists of small releases of software building off the previous release. Each release is tested thoroughly before it is implemented to ensure the quality of the software. The Agile method of “sprints” will work best for this project due to the short amount of time we have to deliver the first rendition of the product. These Agile sprints will allow our team to basically power program in a week or two’s time. Thus helping us achieve a lot quickly and still give us time to retrospectively evaluate the successes of that sprint as well as the problems we still need to face in the future. This sprint-first then evaluate-later technique optimizes time spent on the project and also gives us an opportunity to thoroughly debug our application before delivery.
 
-	We would like to be able to implement the daily meeting aspect of Agile, but our schedules do not allow for that. To make up for this, we will try to talk regularly about what we are doing on slack or skype. Each person will have to share what they're working on, successes, and current problems during these meetings. This will keep everyone up to date on the progress of the app and what’s left to be accomplished. 
+We plan to follow the Agile methodology for the duration of the project. The Agile model consists of small releases of software building off the previous release. Each release is tested thoroughly before it is implemented to ensure the quality of the software. The Agile method of “sprints” will work best for this project due to the short amount of time we have to deliver the first rendition of the product. These Agile sprints will allow our team to basically power program in a week or two’s time. Thus helping us achieve a lot quickly and still give us time to retrospectively evaluate the successes of that sprint as well as the problems we still need to face in the future. This sprint-first then evaluate-later technique optimizes time spent on the project and also gives us an opportunity to thoroughly debug our application before delivery.
+
+We would like to be able to implement the daily meeting aspect of Agile, but our schedules do not allow for that. To make up for this, we will try to talk regularly about what we are doing on slack or skype. Each person will have to share what they're working on, successes, and current problems during these meetings. This will keep everyone up to date on the progress of the app and what’s left to be accomplished. 
 
 Collaboration Tool: Slack
 
