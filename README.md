@@ -5,7 +5,7 @@ MILESTONE 1
 
 Team Name: College Crusaders
 
-Members: Joey Pucciarelli, Jim Jenkins, Taylor Jesse, Toshal Ghimire, Dale Peffer, 
+Members: Joey Pucciarelli, Jim Jenkins, Taylor Jesse, Toshal Ghimire, Dale Peffer, Nolawee Mengist
 
 Description: 
 The general idea of our application is to help college students really understand how their college degree will affect their future in either a good or bad way. Two major components of planning ahead include knowing one’s job competition in his/her field and managing paying off student debt. Many students ask, “I am making the right investment in higher education?” The goal of our app is to lead students to that answer.
