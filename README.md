@@ -40,7 +40,7 @@ Version Control: GitHub
 
 Repository URL: https://github.com/TaylorJesse/CSCI3308CollegeCrusaders/tree/master
 
-Group Usernames: TaylorJesse, ToshalGhimire, JoeyPucciarelli, jim-a-jenkins, dalepeffer
+Group Usernames: TaylorJesse, ToshalGhimire, JoeyPucciarelli, jim-a-jenkins, dalepeffer, Nolawee
 
 Software Development Methodology: 
 
