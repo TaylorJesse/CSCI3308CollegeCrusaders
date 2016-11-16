@@ -1,36 +1,47 @@
-nav{
+nav {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-	font-size: 17px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 24px;
-  background-image: #af1616 !important; /* For browsers that do not support gradients */
-  background-image: -webkit-linear-gradient(#af1616, #ed3b3b) !important; /* For Safari 5.1 to 6.0 */
-  background-image: -o-linear-gradient(#af1616, #ed3b3b) !important; /* For Opera 11.1 to 12.0 */
-  background-image: -moz-linear-gradient(#af1616, #ed3b3b) !important; /* For Firefox 3.6 to 15 */
-  background-image: linear-gradient(#af1616, #ed3b3b) !important; /* Standard syntax */
+  font-size: 17px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 24px;
+  background-image: #af1616 !important;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-linear-gradient(#af1616, #ed3b3b) !important;
+  /* For Safari 5.1 to 6.0 */
+  background-image: -o-linear-gradient(#af1616, #ed3b3b) !important;
+  /* For Opera 11.1 to 12.0 */
+  background-image: -moz-linear-gradient(#af1616, #ed3b3b) !important;
+  /* For Firefox 3.6 to 15 */
+  background-image: linear-gradient(#af1616, #ed3b3b) !important;
+  /* Standard syntax */
 }
 
-.navbar-default .navbar-nav>li>a{
+.dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar-default .navbar-nav>li>a {
   color: white !important;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-size: 20px !important;
   color: white !important;
 }
 
-.container{
+.container {
   font-family: georgia;
   text-align: center;
   font-size: 16px
 }
 
-.row{
+.row {
   padding-top: 10px;
 }
 
-.icon-bar{
+.icon-bar {
   background-color: white !important;
 }
