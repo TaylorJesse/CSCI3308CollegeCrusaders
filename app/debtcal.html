@@ -92,30 +92,18 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-sm-6 pull-left">
-        <p>Current/Projected Debt:</p>
-      </div>
-      <div class="col-sm-6">
-        <div class="dropdown">
-          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            Select
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><a href="#">Arts & Science</a></li>
-            <li><a href="#">Business</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Engineering</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
+    <form class="form-inline">
+      <div class="form-group">
+        <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+        <div class="input-group">
+          <div class="input-group-addon">$</div>
+            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Projected Debt">
+            <div class="input-group-addon">.00</div>
         </div>
       </div>
-    </div>
+        <button type="submit" class="btn btn-primary">Calculate</button>
+    </form>
 
-
-<center><button type="button" class="btn btn-primary">Calculate</button></center>
 
   </div>
   <script src="scripts/main.js"></script>
