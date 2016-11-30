@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-
 <?php
+session_start();
 	error_reporting(E_ALL);
 
 	$servername = "localhost";
@@ -11,17 +10,38 @@
 	if (!$conn) {
 		die("Connection failed: " . mysqli_connect_error());
 	}
-	$sql = "SELECT * FROM Education";
-	$result = $conn->query($sql);
-	if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "Major: " . $row["Major"] . " ";
-    }
-} else {
-    echo "0 results";
-}
+	
+	if(isset($_POST['colleges'])){
+		$majorArray= array();
+		$_SESSION['colleges']= $_POST['colleges'];
+		$colleges= $_POST['colleges'];
+		$sql = "SELECT Major FROM ".$colleges.";";
+		$res = $conn->query($sql);
+		while($majors=mysqli_fetch_array($res)){
+			array_push($majorArray, $majors[0]);
+		}
+	}
+	if(isset($_POST['majors'])){
+		$rankArray= array();
+		$majors= $_POST['majors'];
+		$sql = 'SELECT Ranking, EarlyPay, MidPay FROM '.$_SESSION['colleges'].' WHERE Major= "'.$majors.'";';
+		$res = $conn->query($sql);
+		if ($res->num_rows > 0) {
+			// output data of each row
+			while($row = $res->fetch_assoc()) {
+				$finalRes= "Rank: " . $row["Ranking"]. "  EarlyPay: " . $row["EarlyPay"]. "  MidPay " . $row["MidPay"]. "<br>";
+			}
+		}
+		
+		//while($rank=mysqli_fetch_array($res)){
+			//array_push($rankArray, $rank[0]);
+		//}
+		//print_r($rankArray);
+		
+	}
 ?>
+
+<!DOCTYPE html>
 <html>
 <link href="styles/main.css" rel="stylesheet">
 <!-- Latest compiled and minified CSS -->
@@ -33,6 +53,7 @@
   <meta charset="utf-8">
   <title>College Crusaders</title>
 </head>
+
 <body>
   <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -77,45 +98,44 @@
       <div class="col-sm-6 pull-left">
         <p>College</p>
       </div>
+      <form action="http://collegecrusaders.tk/" method='post'>
       <div class="col-sm-6">
         <div class="dropdown">
-          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            Select
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><a href="#">Arts & Science</a></li>
-            <li><a href="#">Business</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Engineering</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
+          <select aria-labelledby="dropdownMenu1" name="colleges">
+            <option value="Arts_and_Science" >Arts & Science</option>
+			<option value="Business">Business</option>
+            <option value="Education">Education</option>
+            <option value="Engineering">Engineering</option>
+          </select>
         </div>
       </div>
     </div>
+     <input type='submit' value='Submit' class= "btn btn-primary" />
+    </form>
     <div class="row">
       <div class="col-sm-6 pull-left">
         <p>Majors</p>
       </div>
+      <form action="http://collegecrusaders.tk/" method='post'>
       <div class="col-sm-6">
         <div class="dropdown">
-          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            Select
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><a href="#">Anthropology</a></li>
-            <li><a href="#">Art History</a></li>
-            <li><a href="#">Chemistry</a></li>
-            <li><a href="#">Economics</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
+			<select aria-labelledby="dropdownMenu1" name="majors">
+				<?php
+					if(isset($majorArray)){
+						foreach($majorArray as &$major){
+							echo '<option value="'.$major.'">'.$major.'</option>';
+						}
+					}
+						
+				?>
+			</select>
         </div>
       </div>
-    </div>
+    </div> 
   </div>
+  <input type='submit' value='Submit' class= "btn btn-primary" />
+  </form>
+  <p> <?php echo $finalRes ?> </p>
   <script src="scripts/main.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
