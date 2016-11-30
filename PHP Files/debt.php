@@ -36,7 +36,6 @@ session_start();
 		
 	}
 ?>
-
 <!DOCTYPE html>
 <html>
 <link href="styles/main.css" rel="stylesheet">
@@ -84,17 +83,14 @@ session_start();
   <div class="container">
     <div class="row">
       <p>
-        Welcome! This site is designed to help students easily learn about which college majors are in high demand.
-      </p>
-      <p>
-        Simply choose a college, then select a major and hit Go!
+        Use this calculator to learn how long it will take to pay off your student debt.
       </p>
     </div>
     <div class="row">
       <div class="col-sm-6 pull-left">
-        <p>College</p>
+        <p>College:</p>
       </div>
-      <form action="http://collegecrusaders.tk/" method='post'>
+           <form action="http://collegecrusaders.tk/debt.php" method='post'>
       <div class="col-sm-6">
         <div class="dropdown">
           <select aria-labelledby="dropdownMenu1" name="colleges">
@@ -108,11 +104,12 @@ session_start();
     </div>
      <input type='submit' value='Submit' class= "btn btn-primary" />
     </form>
+
     <div class="row">
       <div class="col-sm-6 pull-left">
-        <p>Majors</p>
-      </div>
-      <form action="http://collegecrusaders.tk/" method='post'>
+        <p>Major:</p>
+  </div>
+      <form action="http://collegecrusaders.tk/debt.php" method='post'>
       <div class="col-sm-6">
         <div class="dropdown">
 			<select aria-labelledby="dropdownMenu1" name="majors">
@@ -131,7 +128,21 @@ session_start();
   </div>
   <input type='submit' value='Submit' class= "btn btn-primary" />
   </form>
-  <p> <?php echo $finalRes ?> </p>
+
+    <form class="form-inline">
+      <div class="form-group">
+        <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+        <div class="input-group">
+          <div class="input-group-addon">$</div>
+            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Projected Debt">
+            <div class="input-group-addon">.00</div>
+        </div>
+      </div>
+        <a class="btn btn-primary" href="yourdebt.html" role="button">Calculate</a>
+    </form>
+<p> <?php echo $finalRes; ?> </p>
+
+  </div>
   <script src="scripts/main.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
