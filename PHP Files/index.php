@@ -148,9 +148,9 @@ session_start();
   </thead>
   <tbody>
     <tr>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td>3</td>
+      <td>$30,000</td>
+      <td>$45,000</td>
     </tr>
   </tbody>
 </table>
