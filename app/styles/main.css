@@ -46,3 +46,9 @@ nav {
 .icon-bar {
   background-color: white !important;
 }
+
+hr.style1{
+  border: 0;
+  border-top: 3px double #8c8c8c;
+  width: 75%
+}
