@@ -29,7 +29,9 @@
         if ($res->num_rows > 0) {
           // output data of each row
           while($row = $res->fetch_assoc()) {
-            $finalRes= "Rank: " . $row["Ranking"]. "  EarlyPay: " . $row["EarlyPay"]. "  MidPay " . $row["MidPay"]. "<br>";
+            $Rank= $row["Ranking"];
+            $EarlyPay= $row["EarlyPay"];
+            $MidPay= $row["MidPay"];
           }
         }
         
@@ -145,9 +147,9 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>3</td>
-                            <td>$30,000</td>
-                            <td>$45,000</td>
+                            <td><?php echo str_replace('"', "", $Rank) ?></td>
+                            <td><?php echo str_replace('"', "", $EarlyPay) ?></td>
+                            <td><?php echo str_replace('"', "", $MidPay) ?></td>
                         </tr>
                     </tbody>
                 </table>
