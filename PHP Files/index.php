@@ -91,11 +91,11 @@ session_start();
       </p>
     </div>
     <div class="row">
-      <div class="col-sm-6 pull-left">
+      <div class="col-sm-4 pull-left">
         <p>College</p>
       </div>
       <form action="http://collegecrusaders.tk/" method='post'>
-      <div class="col-sm-6">
+      <div class="col-sm-4">
         <div class="dropdown">
           <select aria-labelledby="dropdownMenu1" name="colleges">
             <option value="Arts_and_Science" >Arts & Science</option>
@@ -109,11 +109,11 @@ session_start();
      <input type='submit' value='Submit' class= "btn btn-primary" />
     </form>
     <div class="row">
-      <div class="col-sm-6 pull-left">
+      <div class="col-sm-4 pull-left">
         <p>Majors</p>
       </div>
       <form action="http://collegecrusaders.tk/" method='post'>
-      <div class="col-sm-6">
+      <div class="col-sm-4">
         <div class="dropdown">
 			<select aria-labelledby="dropdownMenu1" name="majors">
 				<?php
@@ -127,9 +127,11 @@ session_start();
 			</select>
         </div>
       </div>
+      <div class="col-sm-4">
+        <input type='submit' value='Submit' class= "btn btn-primary" />
+      </div>
     </div> 
   </div>
-  <input type='submit' value='Submit' class= "btn btn-primary" />
   </form>
   <p> <?php echo $finalRes ?> </p>
   <script src="scripts/main.js"></script>
