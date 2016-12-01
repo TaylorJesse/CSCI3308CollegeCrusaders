@@ -132,14 +132,15 @@
             </div>
         </div>
         </form>
-        <div class="row tablewidth">
+        <div class = "container pull-center">
+          <div class="row">
             <div class="col-sm-12">
                 <table class="table width">
                     <thead>
-                        <tr>
-                            <th>Rank</th>
-                            <th>Early Pay</th>
-                            <th>Mid Pay</th>
+                        <tr align="center">
+                            <th class="text-center">Rank</th>
+                            <th class="text-center">Early Pay</th>
+                            <th class="text-center">Mid Pay</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -151,6 +152,7 @@
                     </tbody>
                 </table>
             </div>
+        </div>
         </div>
         <p> <?php echo $finalRes ?> </p>
         <script src="scripts/main.js"></script>
