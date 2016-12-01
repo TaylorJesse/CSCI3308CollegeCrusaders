@@ -106,7 +106,9 @@ session_start();
         </div>
       </div>
     </div>
-     <input type='submit' value='Submit' class= "btn btn-primary" />
+    <div class="col-sm-4">
+      <input type='submit' value='Submit' class= "btn btn-primary" />
+    </div>
     </form>
     <div class="row">
       <div class="col-sm-4 pull-left">
