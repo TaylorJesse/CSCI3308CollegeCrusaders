@@ -17,6 +17,15 @@ nav {
   /* Standard syntax */
 }
 
+.maxwidth
+{
+    max-width:150px !important;
+}
+
+.tablewidth{
+  width: 75%;
+}
+
 
 .dropdown {
   position: relative;

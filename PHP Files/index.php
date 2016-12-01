@@ -95,7 +95,7 @@ session_start();
         <p>College</p>
       </div>
       <form action="http://collegecrusaders.tk/" method='post'>
-      <div class="col-sm-4">
+      <div class="col-sm-4 pull-left">
         <div class="dropdown">
           <select aria-labelledby="dropdownMenu1" name="colleges">
             <option value="Arts_and_Science" >Arts & Science</option>
@@ -105,10 +105,11 @@ session_start();
           </select>
         </div>
       </div>
-    </div>
-    <div class="col-sm-4">
+      <div class="col-sm-4">
       <input type='submit' value='Submit' class= "btn btn-primary" />
+      </div>
     </div>
+    
     </form>
     <div class="row">
       <div class="col-sm-4 pull-left">
@@ -116,7 +117,7 @@ session_start();
       </div>
       <form action="http://collegecrusaders.tk/" method='post'>
       <div class="col-sm-4">
-        <div class="dropdown">
+        <div class="dropdown max-width">
 			<select aria-labelledby="dropdownMenu1" name="majors">
 				<?php
 					if(isset($majorArray)){
@@ -135,6 +136,28 @@ session_start();
     </div> 
   </div>
   </form>
+  <div class="row">
+  <div class="col-sm-12">
+  <table class="table width">
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Early Pay</th>
+      <th>Mid Pay</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+
+  </div>
+
   <p> <?php echo $finalRes ?> </p>
   <script src="scripts/main.js"></script>
   <!-- Latest compiled and minified JavaScript -->
