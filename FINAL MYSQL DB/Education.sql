@@ -1,0 +1,14 @@
+INSERT INTO `Education`(`Ranking`, `Major`, `DegreeType`, `EarlyPay`, `MidPay`) VALUES ("255","Secondary Education","Bachelor's","40200","61400");
+INSERT INTO `Education`(`Ranking`, `Major`, `DegreeType`, `EarlyPay`, `MidPay`) VALUES ("266","Health & Physical Education Teaching","Bachelor's","35900","60100");
+INSERT INTO `Education`(`Ranking`, `Major`, `DegreeType`, `EarlyPay`, `MidPay`) VALUES ("288","English Teacher Education","Bachelor's","35900","58000");
+INSERT INTO `Education`(`Ranking`, `Major`, `DegreeType`, `EarlyPay`, `MidPay`) VALUES ("289 (tie)","Education","Bachelor's","38700","57800");
+INSERT INTO `Education`(`Ranking`, `Major`, `DegreeType`, `EarlyPay`, `MidPay`) VALUES ("292 (tie)","Physical Education Teaching","Bachelor's","39500","57300");
+INSERT INTO `Education`(`Ranking`, `Major`, `DegreeType`, `EarlyPay`, `MidPay`) VALUES ("304","Music Teacher Education","Bachelor's","36800","55600");
+INSERT INTO `Education`(`Ranking`, `Major`, `DegreeType`, `EarlyPay`, `MidPay`) VALUES ("307 (tie)","Community Health Education","Bachelor's","37200","55200");
+INSERT INTO `Education`(`Ranking`, `Major`, `DegreeType`, `EarlyPay`, `MidPay`) VALUES ("318 (tie)","Special Education","Bachelor's","35000","51500");
+INSERT INTO `Education`(`Ranking`, `Major`, `DegreeType`, `EarlyPay`, `MidPay`) VALUES ("320","Art Teacher Education","Bachelor's","35300","51300");
+INSERT INTO `Education`(`Ranking`, `Major`, `DegreeType`, `EarlyPay`, `MidPay`) VALUES ("327","Elementary Education","Bachelor's","34700","48900");
+INSERT INTO `Education`(`Ranking`, `Major`, `DegreeType`, `EarlyPay`, `MidPay`) VALUES ("333","Child Development","Bachelor's","32000","42500");
+INSERT INTO `Education`(`Ranking`, `Major`, `DegreeType`, `EarlyPay`, `MidPay`) VALUES ("334","Early Childhood & Elementary Education","Bachelor's","34800","41900");
+INSERT INTO `Education`(`Ranking`, `Major`, `DegreeType`, `EarlyPay`, `MidPay`) VALUES ("335","Child & Family Studies","Bachelor's","31400","40700");
+INSERT INTO `Education`(`Ranking`, `Major`, `DegreeType`, `EarlyPay`, `MidPay`) VALUES ("336","Early Childhood Education","Bachelor's","30700","37500");
