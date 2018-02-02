@@ -2,10 +2,10 @@
     session_start();
       error_reporting(E_ALL);
     
-      $servername = "localhost";
-      $username = "root";
-      $password = "ccrusaders";
-      $dbname = "College_Majors";
+    $servername = '????';
+$username = '???';
+$password = '???';
+$dbname ='????';
       $conn = mysqli_connect($servername, $username, $password, $dbname);
       if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
