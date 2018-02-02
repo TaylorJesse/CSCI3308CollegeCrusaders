@@ -1,10 +1,10 @@
 <?php
 error_reporting(E_ALL);
 
-$servername = "localhost";
-$username = "root";
-$password = "ccrusaders";
-$dbname = "College_Majors";
+$servername = '????';
+$username = '???';
+$password = '???';
+$dbname ='????';
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
