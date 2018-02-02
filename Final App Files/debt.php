@@ -2,10 +2,10 @@
 session_start();
 	error_reporting(E_ALL);
 
-$servername = 'fdb15.biz.nf';
-$username = 'USER';
-$password = 'PASS';
-$dbname = '2253142_taje3985';
+$servername = '????';
+$username = '???';
+$password = '???';
+$dbname ='????';
 $conn = mysqli_connect($servername, $username, $password, $dbname) or die("Could not connect to db!");
 	
 	if(isset($_POST['colleges'])){
